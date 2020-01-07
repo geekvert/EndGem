@@ -1,6 +1,6 @@
 # EndGem
 
-##SETUP
+## SETUP
 
 Install xampp and Download the project repository to C:\xampp\htdocs
 
@@ -11,7 +11,7 @@ first create a database named 'endgem' which will have two tables namely 'users'
 >CREATE TABLE entries;
 ```
 
-###DATABASE TABLE DESIGNS
+### DATABASE TABLE DESIGNS
 
 users table
 ```sql
