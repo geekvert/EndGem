@@ -1,0 +1,197 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: black;/*rgb(221,160,221)*/
+}
+.imageLogo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+}
+.logo:hover {
+    cursor: pointer;
+}
+.name {
+    width: 76%;
+}
+.add-btn, .leaderboard-btn {
+    padding: 12px 15px;
+    margin: 10px;
+    align-self: center;
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(15, 184, 15, 1);
+    color: white;
+}
+.add-btn:active, .leaderboard-btn:active {
+    transform: translateY(4px);
+}
+.add-btn:focus, .leaderboard-btn:focus {
+    outline: none;
+}
+.add-btn:hover, .leaderboard-btn:hover {
+    cursor: pointer;
+    background-color: rgba(15, 184, 15, 0.8);;
+}
+.nav-bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: lightgrey;
+    overflow: auto;
+    
+}
+.course {
+    font-size: 110%;
+    cursor: pointer;
+    padding: 3px 15px;
+}
+.course:hover {background-color: grey; color: white;}
+.active {background-color: grey; color: white;}
+
+/*lower part*/
+
+.container {
+    min-height: 100vh;
+    padding: 3% 6%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap-reverse; */
+}
+.entry {
+    display: flex;
+    flex-direction: column;
+    min-width: 40px;
+    max-width: 160px;
+    min-height: 100px;
+    max-height: 200px;
+    margin: 30px;
+    padding: 10px;
+    background-color: white/*rgb(64, 243, 139)*/;
+    word-wrap: normal;
+    border-radius: 4px;
+    border: 1px solid black;
+    transition: background-color 0.15s;
+}
+.entry:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px grey;
+    border: none;
+}
+.title {
+    margin: 0;
+    padding: 5px;
+    font-weight: 400;
+    text-align: center;
+}
+.date {
+    margin: 0;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.download {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(15, 184, 15, 0.9);
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    margin-top: auto;
+}
+.download:hover {
+    background-color: rgba(15, 184, 15, 0.7);
+    cursor: pointer;
+}
+.admin, .counter {
+    font-size: small;
+}
+
+/*add-btn functionality*/
+.addEntry {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.entryForm  {
+    background-color: white;
+    width: 50%;
+    height: 70%;
+    margin: 5% auto;
+}
+.courseSelect, .materialName, .file, .submit{
+    display: block;
+    width: 60%;
+    padding: 2px;
+    font-size: 100%;
+    margin: 40px auto;
+}
+.submit {
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 8px;
+    background-color: rgba(15, 184, 15, 0.9);
+}
+.submit:hover {background-color:  rgba(15, 184, 15, 0.7);}
+.close {
+    float: right;
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/*Leadreboard-btn functionality*/
+.leaderboard {
+    display: none;
+    position: absolute;
+    max-width: 100%;
+    top: 130px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+}
+.gemTitle, .gemDownloads {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+}
+.gemDownloads {float: right;}
+footer {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+@media only screen and (max-width: 415px){
+
+.logo {width: 150px;}
+.nav-bar {flex-direction: column;}
+.course {align-self: center;}
+.entry {margin: 10px;}
+.counter {font-size: 100%;}
+input, .entry, .topGems, .gemTitle, .gemDownloads {font-size: small;}
+.nav-bar {position: static;}
+}

@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+.heading {
+    color: white;
+    opacity: 0.2;
+    margin: 30px 0 0 0;
+    font-size: 400%;
+    font-weight: 100;
+    letter-spacing: 6px;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    transition: transform 0.6s, opacity 0.6s;
+    transition-timing-function: ease-out;
+}
+.welcome {
+    opacity: 1;
+    transform: translateY(100px);
+}
+.login, .signup {
+    display: flex;
+    width: 20%;
+    min-height: 300px;
+    margin: 80px auto 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 2px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+input {
+    width: 100%;
+    padding: 6px;
+}
+p {margin: 0;}
+button, .login-btn, .signup-btn{
+    font-size: 120%;
+    width: 50%;
+    margin: 0 25%;
+    background-color: rgba(15, 184, 15, 0.884);
+    border: none;
+    border-radius: 50px;
+    color: white;
+}
+.login-btn:focus, .signup-btn:focus {outline: none;}
+button:hover, .login-btn:hover, .signup-btn:hover {
+    cursor: pointer;
+    background-color: rgba(15, 184, 15, 0.7);
+}
+.small-btn, .small-btn-login {
+    font-size: 75%;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+.signup {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    display: none;
+    height: 400px;
+}
+
+@media only screen and (max-width: 415px){
+
+.heading {font-size: 140%;}
+.login, .signup {width: 60%;}
+.login {height: 380px;}
+.signup{
+    top: 5%;
+    left: 20%;
+    height: 460px;
+}
+.small-btn {
+    display: block;
+    width: 40%;
+}
+}
