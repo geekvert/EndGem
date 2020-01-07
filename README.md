@@ -1,6 +1,8 @@
 # EndGem
 
-# I am still preaparing this file.
+This project is named as 'End Gem' which is made by Rahul (Enrollment no. 19116052) for the submitting to IMG IIT Roorkee for the recruitment purpose.
+The project is deployed using 000webhost.
+Please visit [http://geekvert.000webhostapp.com](http://geekvert.000webhostapp.com) to view.
 
 ## SETUP
 
