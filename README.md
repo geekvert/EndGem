@@ -6,7 +6,7 @@
 
 Install xampp and Download the project repository to C:\xampp\htdocs
 
-first create a database named 'endgem' which will have two tables namely 'users' 'entries'
+first create a database named 'endgem' which will have two tables namely 'users' and 'entries'.
 ```sql
 >CREATE DATABASE endgem;
 >CREATE TABLE users;
