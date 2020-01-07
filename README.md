@@ -1,5 +1,7 @@
 # EndGem
 
+# I am still preaparing this file.
+
 ## SETUP
 
 Install xampp and Download the project repository to C:\xampp\htdocs
