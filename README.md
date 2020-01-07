@@ -39,4 +39,5 @@ entries table
 | downloads  | int(11)      | NO   |     | 0                   |                |
 +------------+--------------+------+-----+---------------------+----------------+
 ```
+Now visit [http://localhost/EndGem/welcome.php](http://localhost/EndGem/welcome.php) to view project.
 
