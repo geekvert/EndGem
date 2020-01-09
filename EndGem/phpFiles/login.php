@@ -59,8 +59,4 @@
             header ('location: ../welcome.php?dnm='.$dnmError);
         }
     }
-//test comment1.
-//test comment3.
-//test comment4.
-//test comment5.
 ?>

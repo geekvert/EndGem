@@ -95,7 +95,6 @@
     <footer style="text-align:center; ">
         Made with <i class="fas fa-heart" style="color:red;"></i> by <a href="https://www.facebook.com/profile.php?id=100040462189378" style="text-decoration:none;color:black;" target="_new">Rahul</a>
     </footer>
-<!--test comment2-->
     <style>
     .download_link{
         display: block;
